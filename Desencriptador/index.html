@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+        <title>Desencriptador HTML</HTml></title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptacion</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="m-1">
+            <h1><img  class="candado"img src="imagenes/alura-logo.png"  alt="Logo de alura"></h1>
+        </nav>
+        <section>
+
+            <div class="row">
+                <div class="col-sm-1 col-7 m-3">   
+                    <textarea name="text" id="text"class="text-area" cols="30" rows="10" placeholder="inserte su texto" autofocus></textarea>
+                    <p class="m-1" id="error">
+                        <img src="imagenes/exclamacion.png" class="icono" alt="icono" >Porfavor solo minusculas y sin acento..</p>
+                    <div class="row m-1">
+                        <div class="col-5 col-sm-2 m-1">
+                            <button class="btn btn-primary p-1" onclick="encriptar()">Encriptar</button>
+                        </div>
+                        <div class="col-5 col-sm-2 m-1">
+                            <button class="btn btn-info p-1" onclick="desencriptar()">Descencriptar</button> 
+                        </div>
+                    </div>
+                </div>
+            
+
+             <div class="col-sm-2 col-4 m-1 card card2">
+                    <img src="imagenes/lupa-hombre.jpg" class="image" id="imagen" alt="imagen de hombre con lupa">
+                    
+                
+                    <section class="row left m-4" id="resultado">
+                        <h1 class="center">Ningun mensaje se ha encontrado</h1>
+                        <p class="center">Ingrese el texto que quiere encriptar</p>
+                    </section>
+
+                    <div class="col-12">
+                        <button class="btn-info p-1 copiar" id="copiar" hidden>Copiar</button>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
+
+        </section>
+
+         <script src="encriptador.js"></script>
+    </body>
+
+    <script src="encriptador.js"></script>
+
+    <footer >
+        <p class="copyright">&copy Jonathan P.</p>
+    </footer>
+</html>
